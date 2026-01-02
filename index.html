@@ -46,7 +46,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hi, I'm</p>
         <h1 class="title">Emmanuel Paul</h1>
-        <p class="section__text__p2">FullStack Web Developer</p>
+        <p class="section__text__p2"><span id="typed"></span></p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -400,11 +400,28 @@
       </nav>
       <p id="copyright"></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
     <script src="script.js" defer></script>
     <script>
       const copyright = document.getElementById("copyright");
       const currentDate = new Date().getFullYear();
       copyright.textContent = `Copyright © ${currentDate} Emmanuel Paul, All Rights Reserved.`;
+
+      // Typing Animation
+
+      window.onload = function () {
+        var typed = new Typed("#typed", {
+          strings: [
+            "FullStack Web Developer",
+            "Technical Writer",
+            "UI Designer",
+          ],
+          typeSpeed: 90,
+          backSpeed: 50,
+          backDelay: 1000,
+          loop: true,
+        });
+      };
     </script>
   </body>
 </html>
