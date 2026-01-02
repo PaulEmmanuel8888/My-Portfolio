@@ -356,7 +356,7 @@
         alt="Arror icon"
         srcset=""
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#contact'"
       />
     </section>
     <section id="contact">
@@ -367,11 +367,44 @@
           <img
             src="./assets/email.png"
             alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:paulemmanuel8888@gmail.com"
+              >Paulemmanuel8888@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
             class="icon contact-icon"
           />
+          <p>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+          </p>
         </div>
       </div>
     </section>
-    <script src="script.js"></script>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p id="copyright"></p>
+    </footer>
+    <script src="script.js" defer></script>
+    <script>
+      const copyright = document.getElementById("copyright");
+      const currentDate = new Date().getFullYear();
+      copyright.textContent = `Copyright © ${currentDate} Emmanuel Paul, All Rights Reserved.`;
+    </script>
   </body>
 </html>
