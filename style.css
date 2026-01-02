@@ -295,3 +295,27 @@ article {
 article .icon {
   cursor: default;
 }
+
+/* Projects Section */
+#projects {
+  position: relative;
+}
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+.project-img {
+  width: 90%;
+  height: 90%;
+  border-radius: 2rem;
+}
+.project-title {
+  margin: 1rem;
+  color: rgb(0, 0, 0);
+}
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* Contact Section*/
