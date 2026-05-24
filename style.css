@@ -88,7 +88,9 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .menu-links a {
   display: block;
@@ -264,7 +266,12 @@ section {
   margin: auto 0;
 }
 .whitespace {
+  width: 50px;
   visibility: hidden;
+}
+.name {
+  font-size: 22px;
+  color: black;
 }
 /* Experience Section */
 #experience {
@@ -298,7 +305,9 @@ article {
 article .icon {
   cursor: default;
 }
-
+.article-container article {
+  justify-content: left;
+}
 /* Projects Section */
 #projects {
   position: relative;

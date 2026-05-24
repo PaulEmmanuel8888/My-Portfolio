@@ -50,7 +50,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Emmanuel_Paul_CV.pdf')"
           >
             Download CV
           </button>
@@ -66,13 +66,20 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn Profile"
             class="icon"
-            onclick="location.href = 'https://www.linkedin.com/'"
+            onclick="
+              window.open(
+                'https://www.linkedin.com/in/emmanuelpaul8888/',
+                '_blank',
+              )
+            "
           />
           <img
             src="./assets/github.png"
             alt="My Github Profile"
             class="icon"
-            onclick="location.href = 'https://github.com/PaulEmmanuel8888'"
+            onclick="
+              window.open('https://github.com/PaulEmmanuel8888', '_blank')
+            "
           />
         </div>
       </div>
@@ -114,18 +121,18 @@
               <h3>Education</h3>
               <p>
                 B.Sc. <br />
-                Bachelors Degree
+                Computer Science
               </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              necessitatibus voluptatibus soluta facilis numquam sapiente fuga
-              magnam inventore dolor autem explicabo animi est possimus tempora
-              ea provident beatae, amet vitae ipsam minus aliquam quidem. Sequi
-              ratione excepturi impedit perferendis enim ut omnis distinctio,
-              aliquid eius animi quae velit minima quo.
+              Hi, I’m <span class="name">Emmanuel Paul</span>, a full-stack web
+              developer focused on building modern, responsive, and
+              user-centered web applications. I enjoy transforming ideas into
+              scalable digital products using JavaScript, React, Node.js, and
+              PostgreSQL. When I’m not coding, I’m learning, experimenting, and
+              pushing myself to build better solutions with every project.
             </p>
           </div>
         </div>
@@ -152,9 +159,8 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div class="skill-heading">
                   <h3>HTML</h3>
-                  <p>Advanced<span class="whitespace">Nu</span></p>
                 </div>
               </article>
               <article>
@@ -163,9 +169,8 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div class="skill-heading">
                   <h3>CSS</h3>
-                  <p>Advanced<span class="whitespace">Nu</span></p>
                 </div>
               </article>
               <article>
@@ -175,8 +180,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Advanced</p>
+                  <h3>JavaScript <span class="whitespace"></span></h3>
                 </div>
               </article>
               <article>
@@ -186,8 +190,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
-                  <p>Beginner</p>
+                  <h3>Python <span class="whitespace"></span></h3>
                 </div>
               </article>
               <article>
@@ -197,8 +200,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Bootstrap</h3>
-                  <p>Beginner</p>
+                  <h3>Bootstrap <span class="whitespace"></span></h3>
                 </div>
               </article>
               <article>
@@ -208,8 +210,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>React JS</h3>
-                  <p>Intermediate</p>
+                  <h3>React JS <span class="whitespace"></span></h3>
                 </div>
               </article>
             </div>
@@ -225,7 +226,7 @@
                 />
                 <div>
                   <h3>PostgreSQL</h3>
-                  <p>Intermediate</p>
+                  <div class="whitespace">Nu</div>
                 </div>
               </article>
               <article>
@@ -236,7 +237,7 @@
                 />
                 <div>
                   <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <div class="whitespace">Nu</div>
                 </div>
               </article>
 
@@ -248,7 +249,7 @@
                 />
                 <div>
                   <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <div class="whitespace">Nu</div>
                 </div>
               </article>
 
@@ -260,7 +261,7 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <div class="whitespace">Nu</div>
                 </div>
               </article>
             </div>
@@ -365,6 +366,7 @@
     <section id="contact">
       <p class="section__text__p1">Get In Touch</p>
       <h1 class="title">Contact Me</h1>
+      <form action=""></form>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -385,7 +387,12 @@
             class="icon contact-icon"
           />
           <p>
-            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/emmanuelpaul8888/"
+              >LinkedIn</a
+            >
           </p>
         </div>
       </div>
@@ -416,8 +423,8 @@
         var typed = new Typed("#typed", {
           strings: [
             "Full-Stack Web Developer",
+            "UI/UX Designer",
             "Technical Writer",
-            "UI Designer",
           ],
           typeSpeed: 90,
           backSpeed: 50,
