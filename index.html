@@ -281,7 +281,10 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div
+            class="details-container project-card color-container"
+            data-project="brackets"
+          >
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
@@ -289,11 +292,15 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Between Brackets</h2>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href = 'https://github.com/'"
+                onclick="
+                  location.href =
+                    'https://github.com/PaulEmmanuel8888/Between-Brackets'
+                "
               >
                 Github Repo
               </button>
@@ -301,11 +308,14 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href = 'https://github.com/'"
               >
-                Live Demo
+                Live Demo (N/A)
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div
+            class="details-container project-card color-container"
+            data-project="gourmet"
+          >
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
@@ -319,17 +329,20 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href = 'https://github.com/'"
               >
-                Github Repo
+                Github Repo (N/A)
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href = 'https://github.com/'"
+                onclick="location.href = 'https://gourmetshuffle.onrender.com'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div
+            class="details-container project-card color-container"
+            data-project="project3"
+          >
             <div class="article-container">
               <img
                 src="./assets/project-3.png"
@@ -343,13 +356,13 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href = 'https://github.com/'"
               >
-                Github Repo
+                Github Repo (N/A)
               </button>
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href = 'https://github.com/'"
               >
-                Live Demo
+                Live Demo (N/A)
               </button>
             </div>
           </div>
@@ -362,6 +375,26 @@
         class="icon arrow"
         onclick="location.href = './#contact'"
       />
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="closeBtn">&times;</span>
+
+          <h2 id="modalTitle"></h2>
+
+          <div class="carousel">
+            <img id="carouselImage" src="" alt="project image" />
+
+            <div class="carousel-controls">
+              <button id="prevBtn">‹</button>
+              <button id="nextBtn">›</button>
+            </div>
+          </div>
+
+          <p id="modalDesc"></p>
+
+          <div id="modalTech" class="tech-list"></div>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <p class="section__text__p1">Get In Touch</p>

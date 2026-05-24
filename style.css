@@ -316,6 +316,11 @@ article .icon {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
   padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.color-container:hover {
+  transform: scale(1.05);
 }
 .project-img {
   width: 100%;
@@ -329,6 +334,88 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  width: 500px;
+  max-width: 90%;
+
+  max-height: 85vh;
+  overflow-y: auto;
+
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-controls button {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tech-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-list span {
+  background-color: gainsboro;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
 }
 
 /* Contact Section*/
