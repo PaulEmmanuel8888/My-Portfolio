@@ -27,24 +27,52 @@ const projects = {
   brackets: {
     title: "Between Brackets",
     description:
-      "A full-stack blog application built with Node.js, Express, EJS, and PostgreSQL. Includes admin authentication, CRUD posts, and image handling.",
-    tools: ["Node.js", "Express", "EJS", "PostgreSQL", "JavaScript"],
-    images: ["./assets/project-1.png", "./assets/project-2.png"],
+      "Between Brackets is a tech writing platform where users can explore curated articles, while a hidden admin dashboard powers content creation and management. Built with Node.js, Express, EJS, and PostgreSQL, it also integrates the Unsplash API for seamless image discovery inside the editor.",
+    tools: ["Node.js", "Express.js", "EJS", "PostgreSQL", "JavaScript"],
+    images: [
+      "./assets/project-img/between-brackets/between-brackets-1.png",
+      "./assets/project-img/between-brackets/between-brackets-2.png",
+      "./assets/project-img/between-brackets/between-brackets-3.png",
+      "./assets/project-img/between-brackets/between-brackets-4.png",
+    ],
   },
 
   gourmet: {
     title: "Gourmet Shuffle",
     description:
-      "A food discovery app powered by TheMealDB API. Users get random meal ideas with detailed recipes and instructions.",
-    tools: ["HTML", "CSS", "JavaScript", "TheMealDB API"],
-    images: ["./assets/project-2.png"],
+      "Gourmet Shuffle is a dynamic meal discovery app powered by TheMealDB API. On load, it instantly generates a random recipe complete with ingredients and step-by-step instructions. Users can explore meals by category, cuisine, or ingredient, or search directly for specific dishes. A floating shuffle button adds an interactive twist, letting users instantly discover new meals.",
+    tools: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TheMealDB API",
+      "Node.js",
+      "Express.js",
+      "EJS",
+    ],
+    images: [
+      "./assets/project-img/gourmet-shuffle/gourmet-shuffle-1.png",
+      "./assets/project-img/gourmet-shuffle/gourmet-shuffle-2.png",
+      "./assets/project-img/gourmet-shuffle/gourmet-shuffle-3.png",
+    ],
   },
 
   project3: {
-    title: "Project Three",
-    description: "A sample project placeholder for portfolio demonstration.",
-    tools: ["HTML", "CSS", "JavaScript"],
-    images: ["./assets/project-3.png"],
+    title: "CoinMetrics",
+    description:
+      "A real-time crypto analytics dashboard powered by the CoinGecko API, featuring live price tracking, sortable market data, and detailed coin pages with interactive Recharts visualizations, 24h performance metrics, and auto-refreshing data every 30 seconds.",
+    tools: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "CoinGecko API",
+      "React",
+      "Recharts.js",
+    ],
+    images: [
+      "./assets/project-img/coinmetrics/coinmetrics-1.png",
+      "./assets/project-img/coinmetrics/coinmetrics-2.png",
+    ],
   },
 };
 
